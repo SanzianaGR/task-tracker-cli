@@ -52,7 +52,7 @@ function listTasks(status) {
         console.log(`${colors.cyan}Tasks${colors.reset}`);
         filteredTasks.forEach(task => {
             const status = task.completed ? 'done' : task.inProgress ? 'in progress' : 'todo';
-            console.log(`${colors.cyan}${task.id}${colors.reset}: ${task.name} - ${status}`);
+            console.log(`${colors.cyan}${task.id}${colors.reset}: ${task.description} - ${status}`);
         });
     }
     else {
